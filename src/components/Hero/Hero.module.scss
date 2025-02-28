@@ -1,0 +1,80 @@
+@import '@/styles/variables.scss';
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Изменено */
+  padding: 50px;
+  background-color: $dark-background;
+  color: $text-color; /* Добавлено (если используется) */
+  border-bottom: 1px solid $line-color;
+}
+
+.text {
+  h1 {
+    font-family: $font-family-Bedas-Neue;
+    font-size: 4em; /* Изменено */
+    color: $secondary-text-color; /* Поправлено */
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-family: $font-family-Bedas-Neue;
+    font-size: 4em; /* Изменено */
+    color: $secondary-text-color; /* Поправлено */
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.2em; /* Изменено */
+    font-weight: 400;
+    font-family: $font-family-manrope;
+    color: $text-color;
+  }
+}
+
+.image {
+  border-radius: 10px;
+  overflow: hidden; /* Обрезает содержимое, выходящее за границы */
+
+  img {
+    display: block;
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    object-fit: cover; /* Обрезает изображение, сохраняя пропорции */
+  }
+}
+
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contactButton {
+  background-color: $primary-color;
+  color: $dark-background;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em; /* Изменено */
+  font-weight: 700; /* Изменено */
+  font-family: $font-family-manrope;
+  cursor: pointer;
+  margin-right: 10px;
+  &:hover {
+    background-color: lighten($primary-color, 10%); // Осветление цвета при наведении
+  }
+}
+
+.socialLink {
+  color: $primary-color;
+  font-size: 1.5em;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+  &:hover {
+    color: lighten($primary-color, 20%);
+  }
+}

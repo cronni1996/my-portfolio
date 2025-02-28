@@ -1,0 +1,59 @@
+.projectCard {
+  display: flex;
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .image {
+    width: 300px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+
+    .projectInfo {
+      display: flex;
+      justify-content: space-between;
+      p {
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .links {
+      display: flex;
+      gap: 10px;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #333;
+        &:hover{
+          background-color: #D3E97A;
+          color:#000000;
+        }
+      }
+    }
+  }
+}
