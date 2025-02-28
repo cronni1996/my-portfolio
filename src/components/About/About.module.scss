@@ -1,3 +1,57 @@
+@import '@/styles/variables.scss';
+
 .about {
-    padding: 20px;
+    padding: 50px;
+    margin: 0 auto; /* Выравниваем по центру */
+    background-color: $dark-background;
+    color: $text-color;
+    display: flex;
+    align-items: flex-start; /* Исправлено */
+
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 70%; /* Добавлено */
+        align-items: flex-start;
+    }
+
+    h1 {
+        display: flex;
+        font-size: 4em;
+        font-family: $font-family-Bedas-Neue;
+        font-weight: 500;
+        color: $secondary-text-color;
+        margin: 0 30px 30px; /* Изменено */
+    }
+
+    h2 {
+        font-family: $font-family-manrope;
+        font-weight: 400;
+        font-size: 2em;
+        color: $secondary-text-color;
+        line-height: 1.2; /* Корректируем межстрочный интервал */
+        margin-bottom: 30px; /* Увеличиваем отступ под абзацем */
+    }
+
+    p {
+        color: $text-color;
+        font-family: $font-family-manrope;
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 1.6; /* Корректируем межстрочный интервал */
+    }
+
+    .moreLink {
+        color: $primary-color;
+        text-decoration: none;
+        border-bottom: 1px solid $primary-color;
+        padding-bottom: 3px;
+        transition: color 0.3s ease, border-bottom-color 0.3s ease;
+        margin-top: 20px;
+
+        &:hover {
+            color: lighten($primary-color, 20%);
+            border-bottom-color: lighten($primary-color, 20%);
+        }
+    }
 }

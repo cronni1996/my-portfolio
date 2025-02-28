@@ -1,5 +1,6 @@
-import React from 'react';
+//import React from 'react';
 import styles from './ProjectCard.module.scss';
+import PropTypes from 'prop-types';
 
 function ProjectCard({ project }) {
     return (
@@ -21,7 +22,7 @@ function ProjectCard({ project }) {
                 </div>
                 <div className={styles.links}>
                     <a href={project.liveDemo} className={styles.liveDemo}>
-                        Проект
+                        Превью
                     </a>
                     <a href={project.github} className={styles.github}>
                         Просмотр на GitHub
@@ -31,5 +32,17 @@ function ProjectCard({ project }) {
         </div>
     );
 }
+ProjectCard.propTypes = {
+    project: PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
+        year: PropTypes.number.isRequired,
+        role: PropTypes.string.isRequired,
+        liveDemo: PropTypes.string.isRequired,
+        github: PropTypes.string.isRequired,
+    }).isRequired,
+};
 
 export default ProjectCard;

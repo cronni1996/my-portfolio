@@ -1,0 +1,100 @@
+@use "sass:color";
+@import '@/styles/variables.scss';
+
+.contact {
+  padding: 50px;
+  background-color: $dark-background;
+  color: $text-color;
+  display: flex;
+  justify-content: space-between; /* Распределяем пространство между частями */
+  align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+  height: 100vh;
+}
+
+.contactLeft {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Распределяем пространство внутри левой части */
+}
+
+.contactLeft > div { /* Стили для обертки контента в левой части */
+  /* Дополнительные стили для контента */
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    border-bottom: 1px solid $primary-color;
+    padding-bottom: 2px;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+
+    &:hover {
+      color: lighten($primary-color, 20%);
+      border-bottom-color: lighten($primary-color, 20%);
+    }
+  }
+}
+
+.socialLinks {
+  margin: 20px 0;
+
+  a {
+    color: $primary-color;
+    font-size: 1.5em;
+    margin-right: 15px;
+  }
+}
+
+.form {
+  width: 55%;
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #1e1e1e;
+  color: $text-color;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button {
+  background-color: $primary-color;
+  color: $dark-background;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: color.adjust($primary-color, $lightness: 20%);
+  }
+}
+
+.copyright {
+  font-size: 0.9em;
+  color: $secondary-text-color;
+  text-align: left;
+}

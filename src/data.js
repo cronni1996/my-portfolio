@@ -5,6 +5,20 @@ const data = {
     skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Git'],
     greeting: 'Привет, меня зовут',
     profileImage: '../src/images/profile.jpg',
+    githubLink: 'https://github.com/cronni1996',
+    linkedinLink: 'https://www.linkedin.com/in/pavel-malukow/',
+    instagramLink: 'https://www.instagram.com/evil_goose_vlg/',
+    aboutMeShort:  'Я front-end разработчик из Волгограда  ',
+    aboutMeText: 'Я — фронтенд-разработчик из Сиднея, ищущий интересные возможности. Имею опыт работы в сфере машиностроения.' +
+        ' При разработке уделяю особое внимание доступности. Увлекаюсь решением проблем и интересуюсь ими. В настоящее время изучаю Reactjs,' +
+        ' Webflow и немного занимаюсь дизайном. Когда я не программирую, мне нравится играть в футбол, фотографировать и играть в Valorant. ' +
+        'Учусь новому, чтобы улучшить свои навыки.',
+
+    email: 'ip.malukow@yandex.ru',
+    resumeLink: '../src/images/resume.pdf', // Link to your resume
+    twitterLink: 'https://twitter.com/yourusername',
+
+
 
     projects: [
         {
