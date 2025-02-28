@@ -9,13 +9,13 @@ const data = {
     projects: [
         {
             id: 1,
-            name: 'Project 1',
-            description: 'Description of project 1...',
-            image: '/images/project1.jpg',
-            year: 2023,
+            name: 'To-Do List',
+            description: 'To-do лист который был создан в процессе обучения JavaScript библиотеки React   ',
+            image: '../src/images/project1.jpg',
+            year: 2025,
             role: 'Frontend Developer',
-            liveDemo: 'https://example.com/project1',
-            github: 'https://github.com/yourusername/project1',
+            liveDemo: 'https://cronni1996.github.io/To-do-react/',
+            github: 'https://github.com/cronni1996/To-do-react',
         }],
 
 

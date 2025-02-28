@@ -11,19 +11,20 @@ function ProjectCard({ project }) {
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <div className={styles.projectInfo}>
+                    <h1>Project info</h1>
                     <p>
-                        <span>Year:</span> {project.year}
+                        <span>Год:</span> {project.year}
                     </p>
                     <p>
-                        <span>Role:</span> {project.role}
+                        <span>Роль:</span> {project.role}
                     </p>
                 </div>
                 <div className={styles.links}>
                     <a href={project.liveDemo} className={styles.liveDemo}>
-                        Live Demo
+                        Проект
                     </a>
                     <a href={project.github} className={styles.github}>
-                        See on GitHub
+                        Просмотр на GitHub
                     </a>
                 </div>
             </div>

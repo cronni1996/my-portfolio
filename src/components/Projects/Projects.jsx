@@ -6,10 +6,9 @@ import data from '@/data';
 function Projects() {
     return (
         <section id="projects" className={styles.projects}>
-            <h2>Featured Projects</h2>
+            <h2>Мои проекты </h2>
             <p>
-                Here are some of the selected projects that showcase my passion for
-                front-end development.
+                Вот некоторые из отобранных проектов, которые демонстрируют мой подход к веб разработке.
             </p>
             <div className={styles.projectList}>
                 {data.projects.map((project) => (
