@@ -6,20 +6,16 @@
   background-color: $dark-background;
   color: $text-color;
   display: flex;
-  justify-content: space-between; /* Распределяем пространство между частями */
-  align-items: flex-start; /* Выравниваем элементы по верхнему краю */
-  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .contactLeft {
-  width: 40%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Распределяем пространство внутри левой части */
-}
+  justify-content: space-around;
 
-.contactLeft > div { /* Стили для обертки контента в левой части */
-  /* Дополнительные стили для контента */
 }
 
 h2 {

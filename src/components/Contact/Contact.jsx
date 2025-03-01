@@ -35,9 +35,11 @@ function Contact() {
 
                     <button type="submit">Отправить</button>
                 </form>
+
             </div>
+            <p className={styles.copyright}>© 2025 Pavel Malukow</p>
             <div>
-                <p className={styles.copyright}>© 2025 Pavel Malukow</p>
+
             </div>
 
         </section>
