@@ -1,7 +1,6 @@
 //import React from 'react';
 import styles from './Contact.module.scss';
 import data from '@/data';
-
 function Contact() {
     return (
 
@@ -38,15 +37,9 @@ function Contact() {
 
             </div>
             <p className={styles.copyright}>© 2025 Pavel Malukow</p>
-            <div>
-
-            </div>
-
         </section>
 
-
     );
-
 }
 
 export default Contact;
